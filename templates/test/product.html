@@ -1,0 +1,13 @@
+{% extends 'test/base.html' %} 
+
+{% block title %} product_list {% endblock %}
+
+{% block content %} 
+ 
+  {% for info in data %}
+    
+  <p>{{info.name}}</p>
+  <p>{{info.Email}}</p>
+
+ {% endfor %}
+{% endblock %}
